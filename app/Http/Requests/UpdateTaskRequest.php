@@ -19,11 +19,12 @@ class UpdateTaskRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
+     * Reglas establecidas para actualizar una tarea
+     * 
      * @return array<string, mixed>
      */
     public function rules()
     {
-        dd($this->task);
         return [
             'user_id'       => ['sometimes'],
             'position_id'   => ['required', 'integer'],

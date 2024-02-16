@@ -15,6 +15,10 @@ class PositionSeeder extends Seeder
      */
     public function run()
     {
+
+        /*
+        * realizo varias inserciones en la tabla positions (estados de tareas)
+        */
         Position::create([
             'position' => 'No Asignada',
         ]);

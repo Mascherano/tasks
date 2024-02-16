@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('positions', function (Blueprint $table) {
             $table->id();
-            $table->string('position')->unique();
+            $table->string('position')->unique(); //campo que contendrá el nombre de la posición de la tarea
             $table->timestamps();
         });
     }

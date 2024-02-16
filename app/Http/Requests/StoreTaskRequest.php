@@ -19,6 +19,8 @@ class StoreTaskRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
+     * Reglas establecidas para grabar una tarea
+     * 
      * @return array<string, mixed>
      */
     public function rules()

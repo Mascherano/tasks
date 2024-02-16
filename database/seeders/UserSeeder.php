@@ -16,6 +16,9 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        /*
+        * Realizo inserción de un usuario de pruebas
+        */
         User::create([
             'name' => 'Marcelo Andrés González Cartes',
             'email' => 'chelomario@gmail.com',

@@ -15,7 +15,9 @@ class User extends Authenticatable
 
     /**
      * The attributes that are mass assignable.
-     *
+     * 
+     * Arreglo de datos que se pueden completar
+     * 
      * @var array<int, string>
      */
     protected $fillable = [
@@ -43,6 +45,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    /*
+    * Funcion que crea la relación entre los usuarios y las tareas
+    * Es una función hasMany que describe una relación de uno a muchos
+    * Un usuario puede tener una o muchas tareas asignadas
+    */
     public function tasks(): HasMany
     {
         return $this->hasMany(Task::class);

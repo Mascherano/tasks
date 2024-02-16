@@ -19,6 +19,8 @@ class UpdatePositionRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
+     * Reglas establecidas para actualizar una posición
+     * 
      * @return array<string, mixed>
      */
     public function rules()
